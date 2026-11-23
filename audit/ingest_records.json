@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-22",
+  "environment": "ChatGPT with web reads and file editing, not a local coding agent",
+  "total_ingests": 5,
+  "records": [
+    {
+      "source_id": "S1",
+      "original_url": "https://www.ifrs.org/issued-standards/list-of-standards/ias-33-earnings-per-share.html/",
+      "page_verified": true,
+      "reading_location": "About（IAS 33 的基本 EPS、稀釋 EPS 與分母說明）",
+      "source_memo": "raw/verified_notes/S1-verified.md",
+      "updated_pages": [
+        "01-eps.md"
+      ],
+      "status": "completed_in_current_chat",
+      "date": "2026-11-22"
+    },
+    {
+      "source_id": "S2",
+      "original_url": "https://www.sec.gov/files/rules/proposed/33-8160.htm",
+      "page_verified": true,
+      "reading_location": "Action: Proposed rule；I. Introduction",
+      "source_memo": "raw/verified_notes/S2-verified.md",
+      "updated_pages": [
+        "02-buyback.md",
+        "01-eps.md"
+      ],
+      "status": "completed_in_current_chat",
+      "date": "2026-11-22"
+    },
+    {
+      "source_id": "S3",
+      "original_url": "https://corpgov.law.harvard.edu/2016/02/08/the-real-effects-of-share-repurchases/",
+      "page_verified": true,
+      "reading_location": "2016-02-08 作者文章，討論門檻與後四季企業決策（內文前半與研究結果）",
+      "source_memo": "raw/verified_notes/S3-verified.md",
+      "updated_pages": [
+        "03-research.md",
+        "02-buyback.md",
+        "01-eps.md"
+      ],
+      "status": "completed_in_current_chat",
+      "date": "2026-11-22"
+    },
+    {
+      "source_id": "S4",
+      "original_url": "https://www.theeffectbook.net/ch-CausalPaths.html",
+      "page_verified": true,
+      "reading_location": "8.1 I Walk the Line；causal paths / alternate explanations",
+      "source_memo": "raw/verified_notes/S4-verified.md",
+      "updated_pages": [
+        "04-endogeneity.md",
+        "03-research.md"
+      ],
+      "status": "completed_in_current_chat",
+      "date": "2026-11-22"
+    },
+    {
+      "source_id": "S5",
+      "original_url": "https://mixtape.scunning.com/06-regression_discontinuity",
+      "page_verified": true,
+      "reading_location": "6.2.7 The Fuzzy RD Design；6.3 Challenges to Identification",
+      "source_memo": "raw/verified_notes/S5-verified.md",
+      "updated_pages": [
+        "05-rdd.md",
+        "03-research.md",
+        "04-endogeneity.md"
+      ],
+      "status": "completed_in_current_chat",
+      "date": "2026-11-22"
+    }
+  ]
+}

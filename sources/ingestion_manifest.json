@@ -1,0 +1,47 @@
+{
+  "topic": "股票回購、EPS與因果推論",
+  "date": "2026-11-22",
+  "method": "Karpathy-style five sequential source reads and incremental Markdown wiki updates in this ChatGPT conversation; original public sources opened via web tool, no external platform API invoked",
+  "in_chat_source_ingests_completed": 5,
+  "external_agent_ingests_completed": 0,
+  "source_records_prepared": 5,
+  "wiki_pages_prepared": 5,
+  "evidence": [
+    "wiki/log.md",
+    "audit/ingest_records.json",
+    "audit/ingest_diffs/",
+    "raw/verified_notes/"
+  ],
+  "items": [
+    {
+      "source_id": "S1",
+      "url": "https://www.ifrs.org/issued-standards/list-of-standards/ias-33-earnings-per-share.html/",
+      "wiki_page": "01-eps.md",
+      "status": "ingested_in_chat"
+    },
+    {
+      "source_id": "S2",
+      "url": "https://www.sec.gov/files/rules/proposed/33-8160.htm",
+      "wiki_page": "02-buyback.md",
+      "status": "ingested_in_chat"
+    },
+    {
+      "source_id": "S3",
+      "url": "https://corpgov.law.harvard.edu/2016/02/08/the-real-effects-of-share-repurchases/",
+      "wiki_page": "03-research.md",
+      "status": "ingested_in_chat"
+    },
+    {
+      "source_id": "S4",
+      "url": "https://www.theeffectbook.net/ch-CausalPaths.html",
+      "wiki_page": "04-endogeneity.md",
+      "status": "ingested_in_chat"
+    },
+    {
+      "source_id": "S5",
+      "url": "https://mixtape.scunning.com/06-regression_discontinuity",
+      "wiki_page": "05-rdd.md",
+      "status": "ingested_in_chat"
+    }
+  ]
+}

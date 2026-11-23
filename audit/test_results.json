@@ -1,0 +1,99 @@
+{
+  "tested_at": "2026-11-22 (local project build, Asia/Taipei)",
+  "total_checks": 17,
+  "passed": 17,
+  "failed": 0,
+  "checks": [
+    {
+      "check": "5 verified-source records",
+      "passed": true,
+      "details": "5 sources in catalog"
+    },
+    {
+      "check": "5 prepared wiki topic notes",
+      "passed": true,
+      "details": "5 topic notes and 5 source-to-note mappings; no claim of verified agent ingestion"
+    },
+    {
+      "check": "Karpathy project structure",
+      "passed": true,
+      "details": "schema, index, log, and raw folder present"
+    },
+    {
+      "check": "local-links index.html",
+      "passed": true,
+      "details": "broken relative links: []"
+    },
+    {
+      "check": "local-links wiki.html",
+      "passed": true,
+      "details": "broken relative links: []"
+    },
+    {
+      "check": "local-links slides.html",
+      "passed": true,
+      "details": "broken relative links: []"
+    },
+    {
+      "check": "local-links workflow.html",
+      "passed": true,
+      "details": "broken relative links: []"
+    },
+    {
+      "check": "slide count",
+      "passed": true,
+      "details": "count=11"
+    },
+    {
+      "check": "initial slide shown",
+      "passed": true,
+      "details": "initial active slide = 1"
+    },
+    {
+      "check": "next click",
+      "passed": true,
+      "details": "active slide=2"
+    },
+    {
+      "check": "keyboard next",
+      "passed": true,
+      "details": "active slide=3"
+    },
+    {
+      "check": "EPS interactive calculator",
+      "passed": true,
+      "details": "after setting 80 shares, EPS=1.25"
+    },
+    {
+      "check": "quiz correct response",
+      "passed": true,
+      "details": "答對了！請同時觀察股數與盈餘。"
+    },
+    {
+      "check": "last slide navigation",
+      "passed": true,
+      "details": "next disabled at 11"
+    },
+    {
+      "check": "JS runtime errors",
+      "passed": true,
+      "details": "[]"
+    },
+    {
+      "check": "wiki five pages",
+      "passed": true,
+      "details": "pages=5"
+    },
+    {
+      "check": "wiki navigation",
+      "passed": true,
+      "details": "05-rdd displayed"
+    }
+  ],
+  "manual_review": [
+    "IAS 33: basic EPS denominator uses weighted average ordinary shares",
+    "The Real Effects of Share Repurchases (2016): report findings local to its design; do not extrapolate to all buybacks",
+    "Fuzzy RDD: probability jump, not deterministic assignment",
+    "Slide RDD illustration explicitly labeled conceptual rather than empirical"
+  ]
+}

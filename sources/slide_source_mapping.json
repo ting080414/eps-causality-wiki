@@ -1,0 +1,77 @@
+[
+  {
+    "slide": 1,
+    "source_ids": []
+  },
+  {
+    "slide": 2,
+    "source_ids": [
+      "S2"
+    ]
+  },
+  {
+    "slide": 3,
+    "source_ids": [
+      "S1"
+    ]
+  },
+  {
+    "slide": 4,
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  {
+    "slide": 5,
+    "source_ids": [
+      "S3",
+      "S4"
+    ]
+  },
+  {
+    "slide": 6,
+    "source_ids": [
+      "S4",
+      "S3"
+    ]
+  },
+  {
+    "slide": 7,
+    "source_ids": [
+      "S2",
+      "S4"
+    ]
+  },
+  {
+    "slide": 8,
+    "source_ids": [
+      "S3",
+      "S5"
+    ]
+  },
+  {
+    "slide": 9,
+    "source_ids": [
+      "S3",
+      "S5"
+    ]
+  },
+  {
+    "slide": 10,
+    "source_ids": [
+      "S1",
+      "S5"
+    ]
+  },
+  {
+    "slide": 11,
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5"
+    ]
+  }
+]

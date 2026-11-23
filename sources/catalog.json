@@ -1,0 +1,74 @@
+[
+  {
+    "id": "S1",
+    "title": "IAS 33 — Earnings Per Share",
+    "publisher": "IFRS Foundation",
+    "url": "https://www.ifrs.org/issued-standards/list-of-standards/ias-33-earnings-per-share.html/",
+    "role": "定義基本 EPS、稀釋 EPS、加權平均流通股數",
+    "summary": "基本 EPS 以歸屬普通股股東的盈餘，除以期間加權平均流通股數。稀釋 EPS 另考慮潛在稀釋性工具。回購影響分母的程度取決於期間與交易。",
+    "date": "2026-11-22",
+    "concepts": [
+      "EPS",
+      "加權平均股數",
+      "稀釋 EPS"
+    ]
+  },
+  {
+    "id": "S2",
+    "title": "Rule 10b-18 and Purchases of Certain Equity Securities — Proposed Rule (2002)",
+    "publisher": "U.S. Securities and Exchange Commission",
+    "url": "https://www.sec.gov/files/rules/proposed/33-8160.htm",
+    "role": "企業回購的目的、形式與宣告不等於實際執行",
+    "summary": "公司可能因認為股價低估或資金配置等理由購回自家股票；回購授權與最終執行數量不同，不可用宣告直接代替回購事實。此文件是 2002 年提案，僅用作回購概念資料，非現行法規摘要。",
+    "date": "2026-11-22",
+    "concepts": [
+      "股份買回",
+      "回購動機",
+      "實際執行"
+    ]
+  },
+  {
+    "id": "S3",
+    "title": "The Real Effects of Share Repurchases",
+    "publisher": "Almeida, Fos & Kronlund (2016), Journal of Financial Economics；作者摘要於 Harvard Law School Forum",
+    "url": "https://corpgov.law.harvard.edu/2016/02/08/the-real-effects-of-share-repurchases/",
+    "role": "真實金融研究案例，說明 EPS 門檻、回購與投資的關係",
+    "summary": "研究利用沒有回購時會略微未達分析師 EPS 共識的門檻差異，識別回購變動。作者報告某些門檻附近公司出現回購增加後，資本支出、研發和聘僱減少的現象；解讀範圍為其識別設定下的局部效果，不能推論所有回購均傷害投資。",
+    "date": "2026-11-22",
+    "concepts": [
+      "EPS 預測門檻",
+      "投資",
+      "實證案例",
+      "局部效果"
+    ]
+  },
+  {
+    "id": "S4",
+    "title": "The Effect — Chapter 8: Causal Paths and Closing Back Doors",
+    "publisher": "Nick Huntington-Klein, The Effect (open textbook)",
+    "url": "https://www.theeffectbook.net/ch-CausalPaths.html",
+    "role": "相關與因果、混淆因素、因果圖與後門路徑",
+    "summary": "兩個變數同時改變不一定是單向因果。當第三個因素同時影響處理與結果，就存在替代解釋；因果圖幫助辨識路徑與混淆。",
+    "date": "2026-11-22",
+    "concepts": [
+      "內生性",
+      "混淆因素",
+      "因果圖"
+    ]
+  },
+  {
+    "id": "S5",
+    "title": "Causal Inference: The Mixtape — Chapter 6: Regression Discontinuity",
+    "publisher": "Scott Cunningham, Causal Inference: The Mixtape",
+    "url": "https://mixtape.scunning.com/06-regression_discontinuity",
+    "role": "RDD / Fuzzy RDD 的定義、局部比較與識別假設",
+    "summary": "Fuzzy RDD 是在門檻處處理機率出現跳躍，但不會從 0 必然跳到 1；必須考慮潛在結果連續性與在門檻操弄等識別威脅。門檻附近的效果不自動外推到所有公司。",
+    "date": "2026-11-22",
+    "concepts": [
+      "Fuzzy RDD",
+      "第一階段",
+      "連續性假設",
+      "門檻"
+    ]
+  }
+]

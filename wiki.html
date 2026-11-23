@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><meta content="從 EPS、股票回購到因果推論：五份來源建構的 LLM Wiki 與互動式教學簡報" name="description"/><title>EPS &amp; Buybacks · LLM Wiki</title><style>
+:root{color-scheme:dark;--bg:#0b1322;--surface:#14233a;--panel:#192c46;--line:#304661;--text:#ecf5ff;--muted:#9fb3ca;--mint:#65e5c1;--orange:#ffcd8b;--blue:#77a7ff}*{box-sizing:border-box}body{margin:0;font-family:Inter,"Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif;background:var(--bg);color:var(--text)}a{color:var(--mint)}.topbar{height:70px;background:#0f1c2f;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 clamp(20px,5vw,72px);gap:20px}.brand{font-weight:850;letter-spacing:-.03em;font-size:20px;color:var(--text);text-decoration:none}.brand span{color:var(--mint)}.menu{display:flex;gap:20px;font-size:14px}.menu a{text-decoration:none;color:var(--muted)}.menu a:hover,.menu .active{color:var(--mint)}.pill{font-size:12px;border:1px solid #436a75;padding:6px 12px;border-radius:40px;color:var(--mint)}.eyebrow{font-size:12px;letter-spacing:.19em;color:var(--mint);font-weight:800}.container{max-width:1170px;margin:0 auto;padding:52px 28px}.muted{color:var(--muted)}.footer{text-align:center;padding:32px 16px;color:var(--muted);font-size:12px;border-top:1px solid var(--line)}.hero-title{font-size:clamp(40px,6vw,76px);font-weight:850;line-height:1.12;letter-spacing:-.055em;margin:18px 0 20px}.hero-title em{font-style:normal;color:var(--mint)}.lead{font-size:19px;color:#c8d8e9;line-height:1.95}.btn{border:1px solid var(--line);border-radius:14px;padding:13px 22px;text-decoration:none;color:white;display:inline-flex;align-items:center;gap:12px;font-weight:700;background:#1b304c}.btn.primary{background:var(--mint);color:#092036;border-color:var(--mint)}.btn:hover{filter:brightness(1.08)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.feature{background:var(--surface);border:1px solid var(--line);padding:28px;border-radius:22px}.feature h3{margin-top:4px}.feature p{line-height:1.8;color:var(--muted)}@media(max-width:750px){.grid{grid-template-columns:1fr}.topbar{padding:0 16px}.menu{gap:9px;font-size:12px}.pill{display:none}}
+main{display:grid;grid-template-columns:310px minmax(0,1fr);min-height:calc(100vh - 70px)}aside{border-right:1px solid var(--line);padding:32px 22px;background:#101f33}.sidebar-title{font-size:12px;color:var(--muted);letter-spacing:.14em;font-weight:800;margin-bottom:18px}#search{width:100%;padding:12px;border-radius:10px;background:#0c1a2c;border:1px solid var(--line);color:white;font-size:14px;margin-bottom:22px}.nav-item{border:0;background:none;color:#c8d8e9;padding:14px 12px;width:100%;text-align:left;border-radius:9px;display:flex;align-items:center;gap:9px;font-size:14px;cursor:pointer}.nav-item:hover,.nav-item.active{background:#24415b;color:white}.mini-dot{width:7px;height:7px;border-radius:50%;background:var(--mint)}.src-tag{margin-left:auto;font-size:11px;color:var(--mint)}.content{max-width:870px;width:100%;padding:48px clamp(22px,5vw,78px)}.wiki-article{display:none}.wiki-article.active{display:block}.wiki-article h1{font-size:clamp(32px,4vw,50px);letter-spacing:-.04em;line-height:1.25;margin:14px 0 20px}.wiki-article section{border-bottom:1px solid var(--line);padding:12px 0 18px}.wiki-article h2{font-size:19px;margin:18px 0 10px}.wiki-article p{font-size:15.5px;color:#cad7e6;line-height:2}.origin{display:flex;flex-wrap:wrap;gap:16px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:19px;margin:25px 0}.origin small{color:var(--muted)}.sources{margin-top:50px}.source-row{border:1px solid var(--line);background:var(--surface);border-radius:13px;padding:16px;text-decoration:none;color:white;display:flex;gap:13px;align-items:start;margin:10px 0}.source-row b{color:var(--mint)}.source-row small{display:block;color:var(--muted);line-height:1.6;margin-top:7px}.source-row span:last-child{margin-left:auto}.show-sources{cursor:pointer;padding:10px 0;background:none;border:0;color:var(--mint);font-size:14px}@media(max-width:750px){main{grid-template-columns:1fr}aside{padding:16px;border-bottom:1px solid var(--line);border-right:0}.nav-items{display:flex;overflow:auto}.nav-item{min-width:175px}.content{padding:24px 18px}}
+
+.wiki-article section ul{line-height:1.9;color:#c4d4e3;padding-left:22px}.wiki-article section li{margin:9px 0}.wiki-article section h3{font-size:17px;margin:18px 0 8px;color:#9fe8db}.wiki-article section code{background:#0b192a;color:#9fe8db;padding:2px 6px;border-radius:5px}.wiki-article section strong{color:#f4f9ff}</style></head><body><header class="topbar"><a class="brand" href="index.html">FINANCE <span>· WIKI</span></a><nav class="menu"><a href="index.html">首頁</a><a href="wiki.html">Wiki</a><a href="slides.html">教學簡報</a><a href="workflow.html">Workflow</a></nav><span class="pill">5 SOURCES / 5 NOTES</span></header><main><aside><div class="sidebar-title">KNOWLEDGE LIBRARY</div><input aria-label="搜尋 Wiki 概念" id="search" placeholder="搜尋 EPS、因果、門檻..." type="search"/><div class="nav-items"><button class="nav-item" data-slug="01-eps"><span class="mini-dot"></span><span>EPS 的基本概念</span><span class="src-tag">S1</span></button><button class="nav-item" data-slug="02-buyback"><span class="mini-dot"></span><span>什麼是股票回購？</span><span class="src-tag">S2</span></button><button class="nav-item" data-slug="03-research"><span class="mini-dot"></span><span>回購與企業投資：研究發現</span><span class="src-tag">S3</span></button><button class="nav-item" data-slug="04-endogeneity"><span class="mini-dot"></span><span>相關、因果與內生性</span><span class="src-tag">S4</span></button><button class="nav-item" data-slug="05-rdd"><span class="mini-dot"></span><span>Fuzzy RDD：門檻附近的比較</span><span class="src-tag">S5</span></button></div><p class="muted" style="font-size:12px;line-height:1.8;margin-top:24px">5 篇外部來源 → 5 篇整理筆記。所有條目可追溯原始網址。</p></aside><div class="content"><article class="wiki-article" id="a-01-eps"><div class="eyebrow">KNOWLEDGE NOTE · S1 · UPDATED 2026-11-22</div><h1>EPS 的基本概念</h1><p class="lead">分子是盈餘，分母是期間加權平均股數；EPS 上升不一定代表獲利總額增加。</p><section><h2>概念</h2>
+<p>每股盈餘（Earnings per Share, EPS）衡量歸屬於普通股股東的盈餘，分攤到每股的金額。基本 EPS 的分母是會計期間內的「加權平均流通在外普通股數」，不是一律直接使用期末股數。</p>
+</section><section><h2>示意例子</h2>
+<p>假設某一整段期間，歸屬普通股股東的盈餘維持 100 元，且加權平均流通股數由 100 股降至 80 股：基本 EPS 將由 1.00 元升至 1.25 元。此為純分母效果的教學示意，忽略回購支付的資金成本與其他財務變化。</p>
+</section><section><h2>容易誤解</h2>
+<p>「EPS 增加 = 公司賺更多錢」是錯誤推論。EPS 可能因盈餘上升或分母變小而增加；分析時應同時檢查盈餘、股數和現金。</p>
+</section><section><h2>本次來源整合｜S1：會計標準的核對</h2>
+<ul>
+<li><strong>正式定義</strong>：IAS 33 要求列示基本與稀釋 EPS；基本 EPS 的分母是<strong>整段報導期間的加權平均股數</strong>，不是直接拿季末股數。[S1]</li>
+<li><strong>和本主題的關聯</strong>：如果 EPS 變化來自分母減少，不能直接推論公司整體盈餘變多；此點是理解 <a href="#page=02-buyback">股票回購</a> 的前提。</li>
+<li><strong>限制</strong>：例子中的 100 股變成 80 股是在兩個可比期間的加權平均股數情境，不代表公司在季末買回 20 股就能讓當季分母立刻變成 80 股。</li>
+</ul>
+<h3>與股票回購的跨頁補充（來自 S2）</h3>
+<p>買回股份是一種可能讓流通股數下降的企業行為，但「宣告買回」不等於立即減少期間加權平均股數；須區分授權、實際執行與會計期間。[S1][S2] 詳見 <a href="#page=02-buyback">股票回購</a>。</p>
+<h3>與分析師 EPS 門檻的跨頁補充（來自 S3）</h3>
+<p>在 <a href="#page=03-research">回購研究</a> 中，研究者觀察的是「假設沒有回購，EPS 是否略低於分析師共識」的門檻，不是直接拿報表 EPS 高低比較所有公司。[S3]</p>
+</section><section><h2>相互連結</h2>
+<p><a href="#page=02-buyback">股票回購</a>、<a href="#page=03-research">論文案例</a>。</p>
+</section><div class="origin"><span>原始來源 S1</span><a href="https://www.ifrs.org/issued-standards/list-of-standards/ias-33-earnings-per-share.html/" rel="noopener" target="_blank">IFRS Foundation ↗</a><small>摘要整理於 2026-11-22</small></div></article><article class="wiki-article" id="a-02-buyback"><div class="eyebrow">KNOWLEDGE NOTE · S2 · UPDATED 2026-11-22</div><h1>什麼是股票回購？</h1><p class="lead">企業買回自己發行的股票；回購的理由很多，授權不等於執行。</p><section><h2>概念</h2>
+<p>股票回購（Share Repurchase）是公司購回自己發行的股份。公司可能因資金配置、認為股票低估、資本結構調整等理由進行買回。</p>
+</section><section><h2>可能影響</h2>
+<p>若回購使加權平均流通在外股數下降，在其他條件不變下，EPS 會上升。但公司同時支出現金，也可能影響未來利息收入、負債與其他機會成本。</p>
+</section><section><h2>容易誤解</h2>
+<p>董事會宣布／授權買回，不等於公司已經執行相同數量的股票回購。此處引用 SEC 2002 年提案作概念性歷史資料，<strong>不是</strong>現行法規效力判斷。</p>
+</section><section><h2>本次來源整合｜S2：制度與執行的區別</h2>
+<ul>
+<li><strong>回購的用途</strong>：SEC 文件列出多種可能的商業理由，包括安排員工持股、調整流通股本，以及作為返還資金給股東的方式之一。[S2]</li>
+<li><strong>交易與監理</strong>：該提案討論 Rule 10b-18 對市場買回行為的安全港條件，以及提高買回揭露透明度；這是 <strong>2002 年的 Proposed Rule</strong>，不是當前法規摘要。[S2]</li>
+<li><strong>整合到 Wiki</strong>：連結 <a href="#page=01-eps">EPS</a> 的分母效果與 <a href="#page=03-research">回購的企業投資研究</a>，區分「有回購動機／授權」和「已實際買回」兩種資料。</li>
+</ul>
+<h3>與企業投資研究的跨頁補充（來自 S3）</h3>
+<p>回購不只有財務報導效果；在 <a href="#page=03-research">The Real Effects of Share Repurchases</a> 的特定識別設計中，作者檢視回購行為改變後，資本支出、研發、聘僱是否出現變化；這不能概括成所有企業回購都不利投資。[S3]</p>
+</section><section><h2>相互連結</h2>
+<p><a href="#page=01-eps">EPS</a>、<a href="#page=03-research">股票回購論文</a>。</p>
+</section><div class="origin"><span>原始來源 S2</span><a href="https://www.sec.gov/files/rules/proposed/33-8160.htm" rel="noopener" target="_blank">U.S. Securities and Exchange Commission ↗</a><small>摘要整理於 2026-11-22</small></div></article><article class="wiki-article" id="a-03-research"><div class="eyebrow">KNOWLEDGE NOTE · S3 · UPDATED 2026-11-22</div><h1>回購與企業投資：研究發現</h1><p class="lead">Almeida 等人利用分析師 EPS 門檻附近回購誘因的變動，研究投資、研發和聘僱。</p><section><h2>研究問題</h2>
+<p>企業回購股票會不會排擠資本支出、研發及員工聘僱？僅靠觀察到「回購多、投資少」的相關性，無法直接下因果結論。</p>
+</section><section><h2>設計直覺</h2>
+<p>研究比較假設不回購便「略微低於分析師預期」與「略微高於分析師預期」的公司；兩側因接近門檻而更可比，但仍需滿足識別假設。</p>
+</section><section><h2>研究報告</h2>
+<p>作者在其研究設計下報告：部分因 EPS 壓力而增加回購的企業，後續四季資本支出、研發與員工聘僱呈現下降。這是該樣本和局部識別的發現，並非所有回購都必然排擠投資。</p>
+</section><section><h2>本次來源整合｜S3：作者如何說明研究結果</h2>
+<ul>
+<li><strong>因果識別動機</strong>：過去觀察到的「回購多、投資少」，可能只是因成長機會不同，不能直接視為回購的因果作用。[S3]</li>
+<li><strong>比較方式</strong>：作者將「不回購時 EPS 會略低於共識」的公司與門檻另一側比較，觀察回購誘因與後續企業活動。[S3]</li>
+<li><strong>作者摘要的結果</strong>：相較於剛好達標的企業，作者報告 EPS 誘因下的回購上升，伴隨後續四季資本支出、研發與聘僱下降；其摘要所報效果約分別為樣本平均的 10%、3%、5%（依各指標的樣本平均作比較）。[S3]</li>
+<li><strong>如何解讀</strong>：這是特定樣本、特定設計及識別假設下的研究結果；請搭配 <a href="#page=04-endogeneity">因果混淆</a> 與 <a href="#page=05-rdd">Fuzzy RDD</a> 閱讀。</li>
+</ul>
+<h3>因果解釋的跨頁核對（來自 S4）</h3>
+<p>在將研究發現稱為「因果效果」之前，要排除成長機會等共同因素造成的替代路徑。這正是 <a href="#page=04-endogeneity">因果路徑與後門問題</a> 所提醒的識別挑戰。[S3][S4]</p>
+<h3>Fuzzy RDD 的跨頁核對（來自 S5）</h3>
+<p>這項回購研究採用的不是「低於門檻的公司全部回購」的設計，而是依賴門檻附近回購<strong>機率</strong>的不連續變化。方法直覺詳見 <a href="#page=05-rdd">Fuzzy RDD</a>。[S3][S5]</p>
+</section><section><h2>相互連結</h2>
+<p><a href="#page=04-endogeneity">為什麼相關不等於因果</a>、<a href="#page=05-rdd">Fuzzy RDD</a>。</p>
+</section><div class="origin"><span>原始來源 S3</span><a href="https://corpgov.law.harvard.edu/2016/02/08/the-real-effects-of-share-repurchases/" rel="noopener" target="_blank">Almeida, Fos &amp; Kronlund (2016), Journal of Financial Economics；作者摘要於 Harvard Law School Forum ↗</a><small>摘要整理於 2026-11-22</small></div></article><article class="wiki-article" id="a-04-endogeneity"><div class="eyebrow">KNOWLEDGE NOTE · S4 · UPDATED 2026-11-22</div><h1>相關、因果與內生性</h1><p class="lead">成長機會可能同時影響企業回購和投資，造成混淆。</p><section><h2>問題</h2>
+<p>觀察到回購較多的公司通常投資較少，可能有兩種解釋：一是回購擠壓投資；二是成長機會較少的公司本來就降低投資，同時有較多餘裕回購。</p>
+</section><section><h2>因果圖</h2>
+<p>成長機會 → 回購決策；成長機會 → 企業投資。如果成長機會未被適當處理，回購與投資的相關性便混合了其他路徑，不能直接當成回購的因果效果。</p>
+</section><section><h2>簡單記憶</h2>
+<p>「一起出現」不等於「一個造成另一個」；研究設計的任務是排除合理的替代解釋。</p>
+</section><section><h2>本次來源整合｜S4：把替代解釋畫成路徑</h2>
+<p><code>成長機會 → 股票回購</code> 與 <code>成長機會 → 投資</code> 可構成一條<strong>共同原因的替代路徑</strong>；即使回購和投資呈負相關，也不證明回購本身造成投資減少。[S4]</p>
+<p><strong>例子</strong>：未來缺乏好專案的公司，可能同時減少資本支出並把現金用於回購；反過來，若先決定大量投資，也可能使可回購現金減少。這兩種機制都提醒我們區分相關性和因果性。<a href="#page=03-research">實證研究</a> 因此嘗試找出較不受成長機會影響的回購變化。[S3][S4]</p>
+<h3>和門檻法的跨頁關聯（來自 S5）</h3>
+<p><a href="#page=05-rdd">Fuzzy RDD</a> 提供一個利用門檻附近外生誘因變動改善識別的方向，但前提是相關識別假設成立，並不能自動消除所有混淆或門檻操弄問題。[S4][S5]</p>
+</section><section><h2>相互連結</h2>
+<p><a href="#page=03-research">研究案例</a>、<a href="#page=05-rdd">如何用門檻設計改善識別</a>。</p>
+</section><div class="origin"><span>原始來源 S4</span><a href="https://www.theeffectbook.net/ch-CausalPaths.html" rel="noopener" target="_blank">Nick Huntington-Klein, The Effect (open textbook) ↗</a><small>摘要整理於 2026-11-22</small></div></article><article class="wiki-article" id="a-05-rdd"><div class="eyebrow">KNOWLEDGE NOTE · S5 · UPDATED 2026-11-22</div><h1>Fuzzy RDD：門檻附近的比較</h1><p class="lead">門檻改變處理機率，而非必然決定所有人的行為；需要第一階段與連續性假設。</p><section><h2>核心直覺</h2>
+<p>RDD 比較門檻兩側、條件非常接近的觀察值。Fuzzy RDD 的門檻會讓處理的機率突然改變，但不是門檻一過就每人都接受處理。</p>
+</section><section><h2>應用於回購</h2>
+<p>若不回購的反事實 EPS Surprise 略低於零，企業有較大誘因回購；略高於零的企業誘因較小。這項門檻變動提供研究回購效果的工具，但必須證明處理機率存在明顯跳躍（第一階段）。</p>
+</section><section><h2>識別提醒</h2>
+<p>必須檢查門檻附近沒有會一起跳動的其他因素，且樣本沒有能精確操弄門檻的問題。此類估計屬門檻附近的局部效果，不應外推到全部企業。</p>
+</section><section><h2>本次來源整合｜S5：Sharp 與 Fuzzy 的關鍵差異</h2>
+<ul>
+<li><strong>Sharp RDD</strong>：門檻直接決定是否接受處理；門檻左右處理狀態完全切換。[S5]</li>
+<li><strong>Fuzzy RDD</strong>：門檻兩側的<strong>處理機率</strong>出現不連續跳躍，但不是每個個體都照門檻決定行為。[S5]</li>
+<li><strong>第一階段</strong>：研究應先確認門檻附近的回購機率確實存在跳躍，再談利用這個變動估計對投資的作用。[S3][S5]</li>
+<li><strong>解讀範圍</strong>：需依靠連續性等假設，估計通常是門檻附近會因誘因改變行為者的局部效果；不能推廣成所有企業的平均效果。[S5]</li>
+</ul>
+</section><section><h2>相互連結</h2>
+<p><a href="#page=04-endogeneity">內生性</a>、<a href="#page=03-research">實證案例</a>。</p>
+</section><div class="origin"><span>原始來源 S5</span><a href="https://mixtape.scunning.com/06-regression_discontinuity" rel="noopener" target="_blank">Scott Cunningham, Causal Inference: The Mixtape ↗</a><small>摘要整理於 2026-11-22</small></div></article><section class="sources"><div class="eyebrow">SOURCE REGISTRY</div><h2>原始資料與來源連結</h2><p class="muted">各來源經摘要整理，不是直接複製完整原文。</p><a class="source-row" href="https://www.ifrs.org/issued-standards/list-of-standards/ias-33-earnings-per-share.html/" rel="noopener" target="_blank"><b>S1</b><span>IAS 33 — Earnings Per Share<small>定義基本 EPS、稀釋 EPS、加權平均流通股數</small></span><span>↗</span></a><a class="source-row" href="https://www.sec.gov/files/rules/proposed/33-8160.htm" rel="noopener" target="_blank"><b>S2</b><span>Rule 10b-18 and Purchases of Certain Equity Securities — Proposed Rule (2002)<small>企業回購的目的、形式與宣告不等於實際執行</small></span><span>↗</span></a><a class="source-row" href="https://corpgov.law.harvard.edu/2016/02/08/the-real-effects-of-share-repurchases/" rel="noopener" target="_blank"><b>S3</b><span>The Real Effects of Share Repurchases<small>真實金融研究案例，說明 EPS 門檻、回購與投資的關係</small></span><span>↗</span></a><a class="source-row" href="https://www.theeffectbook.net/ch-CausalPaths.html" rel="noopener" target="_blank"><b>S4</b><span>The Effect — Chapter 8: Causal Paths and Closing Back Doors<small>相關與因果、混淆因素、因果圖與後門路徑</small></span><span>↗</span></a><a class="source-row" href="https://mixtape.scunning.com/06-regression_discontinuity" rel="noopener" target="_blank"><b>S5</b><span>Causal Inference: The Mixtape — Chapter 6: Regression Discontinuity<small>RDD / Fuzzy RDD 的定義、局部比較與識別假設</small></span><span>↗</span></a></section></div></main><footer class="footer">個人研究教學 Wiki · 2026-11-22</footer><script>const buttons=[...document.querySelectorAll('.nav-item')], articles=[...document.querySelectorAll('.wiki-article')];function show(slug){if(!articles.some(a=>a.id==='a-'+slug))slug='01-eps';articles.forEach(a=>a.classList.toggle('active',a.id==='a-'+slug));buttons.forEach(b=>b.classList.toggle('active',b.dataset.slug===slug));history.replaceState(null,'','#page='+slug);window.scrollTo({top:0,behavior:'instant'});}buttons.forEach(b=>b.addEventListener('click',()=>show(b.dataset.slug)));window.addEventListener('hashchange',()=>show(location.hash.replace('#page=','')));document.getElementById('search').addEventListener('input',e=>{const q=e.target.value.toLowerCase();buttons.forEach(b=>b.style.display=b.textContent.toLowerCase().includes(q)?'flex':'none');});show(location.hash.startsWith('#page=')?location.hash.slice(6):'01-eps');</script></body></html>

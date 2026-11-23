@@ -1,0 +1,143 @@
+{
+  "date": "2026-11-22",
+  "total_checks": 27,
+  "passed": 27,
+  "failed": 0,
+  "checks": [
+    {
+      "check": "五份不同來源",
+      "passed": true,
+      "details": "來源數 5"
+    },
+    {
+      "check": "五篇主題知識頁",
+      "passed": true,
+      "details": "主題頁 5"
+    },
+    {
+      "check": "在 ChatGPT 中完成五份來源整合",
+      "passed": true,
+      "details": "不同於外部 Coding Agent 操作"
+    },
+    {
+      "check": "五筆 Ingest 日誌",
+      "passed": true,
+      "details": "找到 ['S1', 'S2', 'S3', 'S4', 'S5']"
+    },
+    {
+      "check": "Query 與 Lint 日誌",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "S1 來源讀取與變更紀錄",
+      "passed": true,
+      "details": "1 個 Wiki 差異檔"
+    },
+    {
+      "check": "S2 來源讀取與變更紀錄",
+      "passed": true,
+      "details": "2 個 Wiki 差異檔"
+    },
+    {
+      "check": "S3 來源讀取與變更紀錄",
+      "passed": true,
+      "details": "3 個 Wiki 差異檔"
+    },
+    {
+      "check": "S4 來源讀取與變更紀錄",
+      "passed": true,
+      "details": "2 個 Wiki 差異檔"
+    },
+    {
+      "check": "S5 來源讀取與變更紀錄",
+      "passed": true,
+      "details": "3 個 Wiki 差異檔"
+    },
+    {
+      "check": "01-eps.md 有來源標記",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "02-buyback.md 有來源標記",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "03-research.md 有來源標記",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "04-endogeneity.md 有來源標記",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "05-rdd.md 有來源標記",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "Wiki 內部連結有效",
+      "passed": true,
+      "details": "[]"
+    },
+    {
+      "check": "沒有孤兒主題頁",
+      "passed": true,
+      "details": "[]"
+    },
+    {
+      "check": "11 頁 HTML 教學簡報",
+      "passed": true,
+      "details": "count=11"
+    },
+    {
+      "check": "互動計算器與小測驗存在",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "每一頁都有可溯源教學構造",
+      "passed": true,
+      "details": "9 source footers"
+    },
+    {
+      "check": "index.html 相對連結",
+      "passed": true,
+      "details": "[]"
+    },
+    {
+      "check": "wiki.html 相對連結",
+      "passed": true,
+      "details": "[]"
+    },
+    {
+      "check": "slides.html 相對連結",
+      "passed": true,
+      "details": "[]"
+    },
+    {
+      "check": "workflow.html 相對連結",
+      "passed": true,
+      "details": "[]"
+    },
+    {
+      "check": "繳交報告.html 相對連結",
+      "passed": true,
+      "details": "[]"
+    },
+    {
+      "check": "繳交說明有六項",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "check": "保留真實完成界線",
+      "passed": true,
+      "details": ""
+    }
+  ]
+}
