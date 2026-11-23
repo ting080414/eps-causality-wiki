@@ -1,10 +1,10 @@
 # AGENTS.md｜Karpathy-style LLM Wiki 作業規則
 
 ## 目標和範圍
-建立「股票回購真的會犧牲企業投資嗎？從 EPS 到因果推論」的持續維護 Markdown Wiki，再**只查 Wiki**（而非重新憑印象寫）產生初學者可懂的 HTML 教學簡報。這是根據 Andrej Karpathy 的 LLM Wiki 模式建立的**本專案規格**，不是原作者發布的可執行 CLI。
+建立「股票回購真的會犧牲企業投資嗎？從 EPS 到因果推論」的持續維護 Markdown Wiki，再**只查 Wiki**產生初學者可懂的 HTML 教學簡報。這是根據 Andrej Karpathy 的 LLM Wiki 模式建立的**本專案規格**，不是原作者發布的可執行 CLI。
 
 ## 三層架構
-- `raw/`：原始資料。`S1–S5` 原檔為來源索引卡；`raw/verified_notes/` 是在 2026-11-22 開啟五個原始公開網址後撰寫的核對摘要。它們都**不是**原始網頁全文；之後新增來源時仍應親自開啟原始網址。
+- `raw/`：原始資料。`S1–S5` 原檔為來源索引卡；`raw/verified_notes/` 是在開啟五個原始公開網址後撰寫的核對摘要。它們都**不是**原始網頁全文；之後新增來源時仍應親自開啟原始網址。
 - `wiki/`：LLM 維護的 Markdown 知識庫。保留五個核心主題頁，使用明確來源註記與 `[[頁名]]` 形式的概念連結；可新增主題，不得捏造來源。
 - `AGENTS.md`：專案 schema／規則。每次操作遵循以下 Ingest、Query、Lint。
 
